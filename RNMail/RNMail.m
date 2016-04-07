@@ -39,7 +39,7 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
         
         if (options[@"body"]){
             NSString *body = [RCTConvert NSString:options[@"body"]];
-            [mail setMessageBody:body isHTML:NO];
+            [mail setMessageBody:body isHTML:YES];
         }
         
         if (options[@"recipients"]){
